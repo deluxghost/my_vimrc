@@ -1,5 +1,5 @@
 " Do not modify version
-let g:dx_version = "2.0.1"
+let g:dx_version = "2.0.2"
 
 " System settings
 let g:dx_windows = 0
@@ -322,6 +322,8 @@ if g:dx_vundle
         \'dir':  '\v[\/]\.(git|hg|svn|rvm|DS_Store)$',
         \'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$'
     \}
+    " NERD Commenter Settings
+    let g:NERDSpaceDelims = 1
 endif
 
 " Load user settings
