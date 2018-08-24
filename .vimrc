@@ -1,5 +1,5 @@
 " Do not modify version
-let g:dx_version = "2.0.0"
+let g:dx_version = "2.0.1"
 
 " System settings
 let g:dx_windows = 0
@@ -327,8 +327,8 @@ endif
 " Load user settings
 let vimrc_name = [".vimrc2", "_vimrc2", ".vimrc.user", "_vimrc.user"]
 for name in vimrc_name
-    if filereadable($HOME . "/" . name)
-        execute "source " . $HOME . "/" . name
+    if filereadable($HOME . g:dx_sep . name)
+        execute "source " . $HOME . g:dx_sep . name
     endif
 endfor
 unlet vimrc_name
